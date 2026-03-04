@@ -1,0 +1,17 @@
+On branch feature/implementing-model-view-controller
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   backend/src/main/resources/application.properties
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	backend/HELP.md
+	backend/docker-start-containter-mysql.bat
+	backend/logs/
+	backend/src/main/java/
+	backend/src/main/resources/db/
+	backend/target/
+	full_git_status.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
