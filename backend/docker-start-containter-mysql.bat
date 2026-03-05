@@ -1,0 +1,1 @@
+docker run -d --name seazen-container -p 3307:3306 -v seazen-data:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=sasa1234 -e MYSQL_DATABASE=seazen mysql:9.4

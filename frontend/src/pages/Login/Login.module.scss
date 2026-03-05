@@ -1,0 +1,51 @@
+@use '../../style/globals' as globals;
+
+
+body {
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, globals.$color_bg),
+            color-stop(100%, globals.$color_bg2));
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.logo {
+    display: block;
+    height: 8vh;
+    margin-bottom: 1rem;
+}
+
+.header {
+    color: globals.$white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+}
+
+.loginStyle {
+    color: globals.$white;
+    margin-top: 1rem;
+
+
+
+    div {
+        margin-top: 2rem;
+        justify-self: center;
+        width: 100%;
+        max-width: 20rem;
+        
+        a {
+            display: block;
+            box-sizing: border-box;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 500;
+            font-size: 18px;
+            text-decoration: none;
+            background: transparent;
+            color: globals.$white;
+            border: solid 1px white;
+            border-radius: 50px;
+            width: 100%;
+            text-align: center;
+            padding: 11px;
+        }
+    }
+}
