@@ -1,9 +1,15 @@
+C:\Users\JuanAntonio\Desktop\Sustainable-Island---Las-Palmas\backend\src\main\java\com\sustainableisland\seazen\config\ApplicationConfig.java
+C:\Users\JuanAntonio\Desktop\Sustainable-Island---Las-Palmas\backend\src\main\java\com\sustainableisland\seazen\config\SecurityConfig.java
 C:\Users\JuanAntonio\Desktop\Sustainable-Island---Las-Palmas\backend\src\main\java\com\sustainableisland\seazen\controllers\AnimalController.java
+C:\Users\JuanAntonio\Desktop\Sustainable-Island---Las-Palmas\backend\src\main\java\com\sustainableisland\seazen\controllers\AuthController.java
 C:\Users\JuanAntonio\Desktop\Sustainable-Island---Las-Palmas\backend\src\main\java\com\sustainableisland\seazen\controllers\NotificationController.java
 C:\Users\JuanAntonio\Desktop\Sustainable-Island---Las-Palmas\backend\src\main\java\com\sustainableisland\seazen\controllers\TaskController.java
 C:\Users\JuanAntonio\Desktop\Sustainable-Island---Las-Palmas\backend\src\main\java\com\sustainableisland\seazen\controllers\UserController.java
 C:\Users\JuanAntonio\Desktop\Sustainable-Island---Las-Palmas\backend\src\main\java\com\sustainableisland\seazen\dtos\AnimalDTO.java
+C:\Users\JuanAntonio\Desktop\Sustainable-Island---Las-Palmas\backend\src\main\java\com\sustainableisland\seazen\dtos\AuthenticationRequest.java
+C:\Users\JuanAntonio\Desktop\Sustainable-Island---Las-Palmas\backend\src\main\java\com\sustainableisland\seazen\dtos\AuthenticationResponse.java
 C:\Users\JuanAntonio\Desktop\Sustainable-Island---Las-Palmas\backend\src\main\java\com\sustainableisland\seazen\dtos\NotificationDTO.java
+C:\Users\JuanAntonio\Desktop\Sustainable-Island---Las-Palmas\backend\src\main\java\com\sustainableisland\seazen\dtos\RegisterRequest.java
 C:\Users\JuanAntonio\Desktop\Sustainable-Island---Las-Palmas\backend\src\main\java\com\sustainableisland\seazen\dtos\TaskDTO.java
 C:\Users\JuanAntonio\Desktop\Sustainable-Island---Las-Palmas\backend\src\main\java\com\sustainableisland\seazen\dtos\UserDTO.java
 C:\Users\JuanAntonio\Desktop\Sustainable-Island---Las-Palmas\backend\src\main\java\com\sustainableisland\seazen\models\Animal.java
@@ -17,3 +23,5 @@ C:\Users\JuanAntonio\Desktop\Sustainable-Island---Las-Palmas\backend\src\main\ja
 C:\Users\JuanAntonio\Desktop\Sustainable-Island---Las-Palmas\backend\src\main\java\com\sustainableisland\seazen\repositories\TaskRepository.java
 C:\Users\JuanAntonio\Desktop\Sustainable-Island---Las-Palmas\backend\src\main\java\com\sustainableisland\seazen\repositories\UserRepository.java
 C:\Users\JuanAntonio\Desktop\Sustainable-Island---Las-Palmas\backend\src\main\java\com\sustainableisland\seazen\SeaZen.java
+C:\Users\JuanAntonio\Desktop\Sustainable-Island---Las-Palmas\backend\src\main\java\com\sustainableisland\seazen\security\JwtAuthenticationFilter.java
+C:\Users\JuanAntonio\Desktop\Sustainable-Island---Las-Palmas\backend\src\main\java\com\sustainableisland\seazen\security\JwtService.java

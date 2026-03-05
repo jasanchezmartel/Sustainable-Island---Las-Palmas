@@ -1,37 +1,29 @@
 package com.sustainableisland.seazen.models;
 
-<<<<<<< HEAD
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import jakarta.persistence.UniqueConstraint;
-=======
-import jakarta.persistence.*;
->>>>>>> develop
+
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
 
-<<<<<<< HEAD
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
+
 import java.util.Collection;
 import java.util.List;
 
-=======
->>>>>>> develop
 @Entity
 @Table(name = "users", uniqueConstraints = {
     @UniqueConstraint(columnNames = "email")
 })
-<<<<<<< HEAD
 public class User implements UserDetails {
-=======
-public class User {
->>>>>>> develop
+
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long id;
@@ -186,7 +178,6 @@ public class User {
   public void setTasksDone(Integer tasksDone) {
     this.tasksDone = tasksDone;
   }
-<<<<<<< HEAD
 
   // UserDetails overrides
 
@@ -219,6 +210,5 @@ public class User {
   public boolean isEnabled() {
     return true;
   }
-=======
->>>>>>> develop
+
 }
