@@ -1,3 +1,5 @@
+@use '../style/globals' as globals;
+
 .landingPage {
     min-height: 100vh;
     display: flex;
@@ -91,28 +93,44 @@
     }
 }
 
-.Button {
-    width: 100%;
-    max-width: 420px;
-    padding: 20px;
-    background: linear-gradient(135deg, #1eb8a0 0%, #0fa08b 100%);
-    color: #051520;
-    font-size: 16px;
-    font-weight: 700;
-    letter-spacing: 0.04em;
-    border: none;
-    border-radius: 100px;
-    cursor: pointer;
-    box-shadow: 0 4px 30px rgba(30,184,160,0.45);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    animation: fadeUp 0.7s 0.3s ease both;
 
-    &:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 8px 40px rgba(30,184,160,0.6);
-    }
+ a {
+            display: block;
+            box-sizing: border-box;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 500;
+            font-size: 18px;
+            text-decoration: none;
+            background: transparent;
+            color: globals.$white;
+            border: solid 1px white;
+            border-radius: 50px;
+            width: 100%;
+            text-align: center;
+            padding: 11px;
+        }
+// .Button {
+//     width: 100%;
+//     max-width: 420px;
+//     padding: 20px;
+//     background: linear-gradient(135deg, #1eb8a0 0%, #0fa08b 100%);
+//     color: #051520;
+//     font-size: 16px;
+//     font-weight: 700;
+//     letter-spacing: 0.04em;
+//     border: none;
+//     border-radius: 100px;
+//     cursor: pointer;
+//     box-shadow: 0 4px 30px rgba(30,184,160,0.45);
+//     transition: transform 0.2s ease, box-shadow 0.2s ease;
+//     animation: fadeUp 0.7s 0.3s ease both;
 
-    &:active {
-        transform: translateY(0);
-    }
-}
+//     &:hover {
+//         transform: translateY(-2px);
+//         box-shadow: 0 8px 40px rgba(30,184,160,0.6);
+//     }
+
+//     &:active {
+//         transform: translateY(0);
+//     }
+// }

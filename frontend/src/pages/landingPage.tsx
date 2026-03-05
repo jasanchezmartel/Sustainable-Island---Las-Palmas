@@ -7,8 +7,8 @@ export function LandingPage() {
 
             <div className={style.logoCard}>
                 <div className={style.logoCircle}>
-                    <img 
-                        src={AppLogo} 
+                    <img
+                        src={AppLogo}
                         alt="OceanGuard logo"
                         style={{ width: '54px', height: '54px', objectFit: 'contain', display: 'block' }}
                     />
@@ -24,7 +24,9 @@ export function LandingPage() {
                 <p>Join thousands of ocean guardians completing weekly cleanup challenges. Track your impact, care for your sea pet, and help turn the tide on plastic pollution.</p>
             </div>
 
-            <button className={style.Button}>Join us right now!!!</button>
+            <div>
+                <a href="/login">Join us now</a>
+            </div>
         </div>
     );
 }
