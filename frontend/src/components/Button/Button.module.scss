@@ -1,0 +1,12 @@
+@use '../../style/globals' as globals;
+
+.btn {
+    background: transparent;
+    border: solid 1px white;
+    color: globals.$white;
+    border-radius: 50px;
+    width: 50vw;
+    height: 42px;
+    justify-content: center;
+    margin-top: 10px; 
+}
