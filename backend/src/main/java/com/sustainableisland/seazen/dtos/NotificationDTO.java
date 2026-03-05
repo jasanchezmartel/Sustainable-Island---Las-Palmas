@@ -8,13 +8,35 @@ public class NotificationDTO {
     private String message;
     private LocalDate dateNotification;
 
-    // Getters and Setters
-    public Long getId() { return id; }
-    public void setId(Long id) { this.id = id; }
-    public Long getUserId() { return userId; }
-    public void setUserId(Long userId) { this.userId = userId; }
-    public String getMessage() { return message; }
-    public void setMessage(String message) { this.message = message; }
-    public LocalDate getDateNotification() { return dateNotification; }
-    public void setDateNotification(LocalDate dateNotification) { this.dateNotification = dateNotification; }
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public Long getUserId() {
+        return userId;
+    }
+
+    public void setUserId(Long userId) {
+        this.userId = userId;
+    }
+
+    public String getMessage() {
+        return message;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
+    }
+
+    public LocalDate getDateNotification() {
+        return dateNotification;
+    }
+
+    public void setDateNotification(LocalDate dateNotification) {
+        this.dateNotification = dateNotification;
+    }
 }
