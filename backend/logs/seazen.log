@@ -1739,6 +1739,7 @@ This generated password is for development use only. Your security configuration
 2026-03-04T18:12:07.637+01:00  INFO 3576 --- [SeaZen] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2026-03-04T18:12:07.639+01:00  INFO 3576 --- [SeaZen] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2026-03-04T18:12:07.652+01:00  INFO 3576 --- [SeaZen] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+<<<<<<< HEAD
 2026-03-04T18:33:39.059+01:00  INFO 25348 --- [SeaZen] [main] com.sustainableisland.seazen.SeaZen      : Starting SeaZen using Java 17.0.12 with PID 25348 (C:\Users\JuanAntonio\Desktop\Sustainable-Island---Las-Palmas\backend\target\classes started by JuanAntonio in C:\Users\JuanAntonio\Desktop\Sustainable-Island---Las-Palmas\backend)
 2026-03-04T18:33:39.062+01:00  INFO 25348 --- [SeaZen] [main] com.sustainableisland.seazen.SeaZen      : No active profile set, falling back to 1 default profile: "default"
 2026-03-04T18:33:39.815+01:00  INFO 25348 --- [SeaZen] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
@@ -1771,3 +1772,5 @@ This generated password is for development use only. Your security configuration
 2026-03-04T18:33:42.835+01:00  WARN 25348 --- [SeaZen] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2026-03-04T18:33:43.317+01:00  INFO 25348 --- [SeaZen] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
 2026-03-04T18:33:43.325+01:00  INFO 25348 --- [SeaZen] [main] com.sustainableisland.seazen.SeaZen      : Started SeaZen in 4.711 seconds (process running for 5.026)
+=======
+>>>>>>> develop
