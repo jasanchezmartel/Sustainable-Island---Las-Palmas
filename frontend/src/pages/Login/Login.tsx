@@ -2,6 +2,8 @@ import { useContext, useState } from 'react'
 import { Input } from '../../components/Input/Input'
 import { AuthContext } from '../../context/AuthContext'
 import { Submit } from '../../components/Submit/Submit'
+import logo from '../../assets/img/logo.png'
+import style from './Login.module.scss'
 
 
 export function Login() {
@@ -11,13 +13,13 @@ export function Login() {
     function postLogin(e: React.SubmitEvent) {
         e.preventDefault()
 
-        const eMail = e.target.email.value
+
         const userName = e.target.username.value
         const passWord = e.target.password.value
 
         const body = new URLSearchParams()
 
-        body.append('email', eMail)
+
         body.append('username', userName)
         body.append('password', passWord)
 
@@ -40,15 +42,20 @@ export function Login() {
 
     return (
         <>
+            <img src={logo} alt="turtle-logo" className={style.logo} />
             {userData && (
-                <b>Welcome {userData.user.email} {userData.user.username} {userData.user.password}</b>
+                <b className={style.header}>Log In {userData.user.username} {userData.user.password}</b>
             )}
             {error && <b>error</b>}
-            <form onSubmit={(e) => postLogin(e)}>
-                <Input type="email" name='email' label='Email' />
-                <Input type="username" name='username' label='Username' />
-                <Input type="password" name='password' label='Password' />
-                <Submit value='Login'></Submit>
+            <form className={style.loginStyle} onSubmit={(e) => postLogin(e)}>
+                <Input type="username" label='Username' />
+                <Input type="password" label='Password' />
+                <div>
+                    <Submit value='Login'></Submit>
+                </div>
+                <div>
+                    <a href="#">Register</a>
+                </div>
             </form>
         </>
     )

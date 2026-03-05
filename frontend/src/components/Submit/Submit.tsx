@@ -4,10 +4,10 @@ interface submitProps {
     value: string
 }
 
-export function Submit ({ value}: submitProps) {
-    return(
+export function Submit({ value }: submitProps) {
+    return (
         <>
-        <input className={style.submitButton} type={'submit'} value={value}/>
+            <input className={style.submitButton} type={'submit'} value={value} />
         </>
     )
 }

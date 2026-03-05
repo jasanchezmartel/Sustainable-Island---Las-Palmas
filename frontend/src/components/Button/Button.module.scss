@@ -1,15 +1,12 @@
 @use '../../style/globals' as globals;
 
-.submitButton {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    font-size: 18px ;
+.btn {
     background: transparent;
     border: solid 1px white;
     color: globals.$white;
     border-radius: 50px;
-    width: 75vw;
+    width: 50vw;
     height: 42px;
     justify-content: center;
-    margin-top: 10px;
+    margin-top: 10px; 
 }
