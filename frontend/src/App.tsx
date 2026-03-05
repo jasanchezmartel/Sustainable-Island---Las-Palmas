@@ -3,8 +3,6 @@ import { Login } from "./pages/Login/Login"
 import { LandingPage } from "./pages/landingPage"
 
 function App() {
-
-
   return (
     <>
       <BrowserRouter>
