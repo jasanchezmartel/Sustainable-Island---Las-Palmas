@@ -22,10 +22,10 @@ export function LandingPage() {
             <div className={style.textCard}>
                 <h1>Small actions. Massive impact.</h1>
                 <p>Join thousands of ocean guardians completing weekly cleanup challenges. Track your impact, care for your sea pet, and help turn the tide on plastic pollution.</p>
-            </div>
 
             <div>
                 <a href="/login">Join us now</a>
+            </div>
             </div>
         </div>
     );
