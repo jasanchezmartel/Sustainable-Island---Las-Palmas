@@ -13,7 +13,7 @@ export function Input ({label, type}: inputPorps) {
         <>
         <label className={style.inputStyle}>
             {label}
-            <input type={type}></input>
+            <input type={type} id={label}></input>
         </label>
         </>
     )

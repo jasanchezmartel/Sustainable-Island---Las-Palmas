@@ -54,7 +54,7 @@ export function Login() {
                     <Submit value='Login'></Submit>
                 </div>
                 <div>
-                    <a href="#">Register</a>
+                    <a href="http://localhost:5173/signup">Register</a>
                 </div>
             </form>
         </>
