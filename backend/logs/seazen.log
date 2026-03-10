@@ -3529,3 +3529,144 @@ Caused by: java.lang.Error: Unresolved compilation problem:
 2026-03-08T11:49:53.817Z  INFO 28376 --- [SeaZen] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2026-03-08T11:49:53.818Z  INFO 28376 --- [SeaZen] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2026-03-08T11:49:53.823Z  INFO 28376 --- [SeaZen] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-03-10T12:16:40.329Z  INFO 14232 --- [SeaZen] [main] com.sustainableisland.seazen.SeaZen      : Starting SeaZen using Java 17.0.12 with PID 14232 (C:\Users\JuanAntonio\Desktop\Sustainable-Island---Las-Palmas\backend\target\classes started by JuanAntonio in C:\Users\JuanAntonio\Desktop\Sustainable-Island---Las-Palmas\backend)
+2026-03-10T12:16:40.330Z  INFO 14232 --- [SeaZen] [main] com.sustainableisland.seazen.SeaZen      : No active profile set, falling back to 1 default profile: "default"
+2026-03-10T12:16:40.775Z  INFO 14232 --- [SeaZen] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-10T12:16:40.817Z  INFO 14232 --- [SeaZen] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 37 ms. Found 5 JPA repository interfaces.
+2026-03-10T12:16:41.222Z  INFO 14232 --- [SeaZen] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-03-10T12:16:41.233Z  INFO 14232 --- [SeaZen] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-10T12:16:41.233Z  INFO 14232 --- [SeaZen] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2026-03-10T12:16:41.273Z  INFO 14232 --- [SeaZen] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-03-10T12:16:41.273Z  INFO 14232 --- [SeaZen] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 908 ms
+2026-03-10T12:16:41.425Z  INFO 14232 --- [SeaZen] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-10T12:16:41.539Z  INFO 14232 --- [SeaZen] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2416c658
+2026-03-10T12:16:41.542Z  INFO 14232 --- [SeaZen] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-10T12:16:41.576Z  INFO 14232 --- [SeaZen] [main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:mysql://localhost:3307/seazen?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true (MySQL 9.4)
+2026-03-10T12:16:41.591Z  WARN 14232 --- [SeaZen] [main] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: MySQL 9.4 is newer than this version of Flyway and support has not been tested. The latest supported version of MySQL is 8.1.
+2026-03-10T12:16:41.629Z  INFO 14232 --- [SeaZen] [main] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.030s)
+2026-03-10T12:16:41.649Z  INFO 14232 --- [SeaZen] [main] o.f.core.internal.command.DbMigrate      : Current version of schema `seazen`: 1
+2026-03-10T12:16:41.655Z  INFO 14232 --- [SeaZen] [main] o.f.core.internal.command.DbMigrate      : Schema `seazen` is up to date. No migration necessary.
+2026-03-10T12:16:41.713Z  INFO 14232 --- [SeaZen] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-10T12:16:41.747Z  INFO 14232 --- [SeaZen] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2026-03-10T12:16:41.784Z  INFO 14232 --- [SeaZen] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-10T12:16:41.989Z  INFO 14232 --- [SeaZen] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-10T12:16:42.035Z  WARN 14232 --- [SeaZen] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-10T12:16:42.044Z  INFO 14232 --- [SeaZen] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 9.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-10T12:16:42.633Z  INFO 14232 --- [SeaZen] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-10T12:16:42.690Z  INFO 14232 --- [SeaZen] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-10T12:16:42.921Z  INFO 14232 --- [SeaZen] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-03-10T12:16:42.921Z  WARN 14232 --- [SeaZen] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-03-10T12:16:42.952Z  WARN 14232 --- [SeaZen] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-10T12:16:43.256Z  INFO 14232 --- [SeaZen] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-03-10T12:16:43.262Z  INFO 14232 --- [SeaZen] [main] com.sustainableisland.seazen.SeaZen      : Started SeaZen in 3.252 seconds (process running for 3.468)
+2026-03-10T12:26:28.231Z  INFO 14232 --- [SeaZen] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-10T12:26:28.233Z  INFO 14232 --- [SeaZen] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-10T12:26:28.234Z  INFO 14232 --- [SeaZen] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-03-10T12:26:28.469Z  INFO 14232 --- [SeaZen] [http-nio-8080-exec-2] c.s.s.m.RequestLoggingInterceptor        : ?? [POST] /api/users - From IP: 0:0:0:0:0:0:0:1
+2026-03-10T12:26:28.610Z  INFO 14232 --- [SeaZen] [http-nio-8080-exec-2] c.s.s.m.RequestLoggingInterceptor        : ?? [POST] /api/users - Completed in 141ms - Status: 200
+2026-03-10T12:26:35.530Z  INFO 14232 --- [SeaZen] [http-nio-8080-exec-4] c.s.s.m.RequestLoggingInterceptor        : ?? [GET] /api/users - From IP: 0:0:0:0:0:0:0:1
+2026-03-10T12:26:35.557Z  INFO 14232 --- [SeaZen] [http-nio-8080-exec-4] c.s.s.m.RequestLoggingInterceptor        : ?? [GET] /api/users - Completed in 27ms - Status: 200
+2026-03-10T12:34:27.385Z  INFO 14232 --- [SeaZen] [http-nio-8080-exec-6] c.s.s.m.RequestLoggingInterceptor        : ?? [DELETE] /api/users/4 - From IP: 0:0:0:0:0:0:0:1
+2026-03-10T12:34:27.426Z  INFO 14232 --- [SeaZen] [http-nio-8080-exec-6] c.s.s.m.RequestLoggingInterceptor        : ?? [DELETE] /api/users/4 - Completed in 42ms - Status: 200
+2026-03-10T13:45:55.725Z  INFO 14232 --- [SeaZen] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-10T13:45:55.878Z  INFO 14232 --- [SeaZen] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-03-10T13:45:55.880Z  INFO 14232 --- [SeaZen] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-10T13:45:55.882Z  INFO 14232 --- [SeaZen] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-03-10T13:45:55.883Z  INFO 14232 --- [SeaZen] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-03-10T13:46:01.871Z  INFO 21908 --- [SeaZen] [main] com.sustainableisland.seazen.SeaZen      : Starting SeaZen using Java 17.0.12 with PID 21908 (C:\Users\JuanAntonio\Desktop\Sustainable-Island---Las-Palmas\backend\target\classes started by JuanAntonio in C:\Users\JuanAntonio\Desktop\Sustainable-Island---Las-Palmas\backend)
+2026-03-10T13:46:01.873Z  INFO 21908 --- [SeaZen] [main] com.sustainableisland.seazen.SeaZen      : No active profile set, falling back to 1 default profile: "default"
+2026-03-10T13:46:02.312Z  INFO 21908 --- [SeaZen] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-10T13:46:02.356Z  INFO 21908 --- [SeaZen] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 38 ms. Found 5 JPA repository interfaces.
+2026-03-10T13:46:02.700Z  INFO 21908 --- [SeaZen] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-03-10T13:46:02.708Z  INFO 21908 --- [SeaZen] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-10T13:46:02.709Z  INFO 21908 --- [SeaZen] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2026-03-10T13:46:02.743Z  INFO 21908 --- [SeaZen] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-03-10T13:46:02.743Z  INFO 21908 --- [SeaZen] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 841 ms
+2026-03-10T13:46:02.869Z  INFO 21908 --- [SeaZen] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-10T13:46:02.973Z  INFO 21908 --- [SeaZen] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@48bc2fce
+2026-03-10T13:46:02.974Z  INFO 21908 --- [SeaZen] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-10T13:46:03.015Z  INFO 21908 --- [SeaZen] [main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:mysql://localhost:3307/seazen?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true (MySQL 9.4)
+2026-03-10T13:46:03.039Z  WARN 21908 --- [SeaZen] [main] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: MySQL 9.4 is newer than this version of Flyway and support has not been tested. The latest supported version of MySQL is 8.1.
+2026-03-10T13:46:03.088Z  INFO 21908 --- [SeaZen] [main] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.039s)
+2026-03-10T13:46:03.110Z  INFO 21908 --- [SeaZen] [main] o.f.core.internal.command.DbMigrate      : Current version of schema `seazen`: 1
+2026-03-10T13:46:03.113Z  INFO 21908 --- [SeaZen] [main] o.f.core.internal.command.DbMigrate      : Schema `seazen` is up to date. No migration necessary.
+2026-03-10T13:46:03.165Z  INFO 21908 --- [SeaZen] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-10T13:46:03.196Z  INFO 21908 --- [SeaZen] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2026-03-10T13:46:03.217Z  INFO 21908 --- [SeaZen] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-10T13:46:03.369Z  INFO 21908 --- [SeaZen] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-10T13:46:03.406Z  WARN 21908 --- [SeaZen] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-10T13:46:03.415Z  INFO 21908 --- [SeaZen] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 9.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-10T13:46:03.950Z  INFO 21908 --- [SeaZen] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-10T13:46:04.013Z  INFO 21908 --- [SeaZen] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-10T13:46:04.230Z  INFO 21908 --- [SeaZen] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-03-10T13:46:04.230Z  WARN 21908 --- [SeaZen] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-03-10T13:46:04.259Z  WARN 21908 --- [SeaZen] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-10T13:46:04.530Z  INFO 21908 --- [SeaZen] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-03-10T13:46:04.536Z  INFO 21908 --- [SeaZen] [main] com.sustainableisland.seazen.SeaZen      : Started SeaZen in 2.936 seconds (process running for 3.132)
+2026-03-10T13:46:15.286Z  INFO 21908 --- [SeaZen] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-10T13:46:15.287Z  INFO 21908 --- [SeaZen] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-10T13:46:15.289Z  INFO 21908 --- [SeaZen] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-03-10T13:50:40.021Z  INFO 21908 --- [SeaZen] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-10T13:50:40.196Z  INFO 21908 --- [SeaZen] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-03-10T13:50:40.199Z  INFO 21908 --- [SeaZen] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-10T13:50:40.201Z  INFO 21908 --- [SeaZen] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-03-10T13:50:40.205Z  INFO 21908 --- [SeaZen] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-03-10T13:56:23.466Z  INFO 20976 --- [SeaZen] [main] com.sustainableisland.seazen.SeaZen      : Starting SeaZen using Java 17.0.12 with PID 20976 (C:\Users\JuanAntonio\Desktop\Sustainable-Island---Las-Palmas\backend\target\classes started by JuanAntonio in C:\Users\JuanAntonio\Desktop\Sustainable-Island---Las-Palmas\backend)
+2026-03-10T13:56:23.467Z  INFO 20976 --- [SeaZen] [main] com.sustainableisland.seazen.SeaZen      : No active profile set, falling back to 1 default profile: "default"
+2026-03-10T13:56:23.891Z  INFO 20976 --- [SeaZen] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-10T13:56:23.935Z  INFO 20976 --- [SeaZen] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 39 ms. Found 5 JPA repository interfaces.
+2026-03-10T13:56:24.298Z  INFO 20976 --- [SeaZen] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-03-10T13:56:24.306Z  INFO 20976 --- [SeaZen] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-10T13:56:24.306Z  INFO 20976 --- [SeaZen] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2026-03-10T13:56:24.353Z  INFO 20976 --- [SeaZen] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-03-10T13:56:24.354Z  INFO 20976 --- [SeaZen] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 859 ms
+2026-03-10T13:56:24.489Z  INFO 20976 --- [SeaZen] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-10T13:56:24.605Z  INFO 20976 --- [SeaZen] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@51ba952e
+2026-03-10T13:56:24.606Z  INFO 20976 --- [SeaZen] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-10T13:56:24.643Z  INFO 20976 --- [SeaZen] [main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:mysql://localhost:3307/seazen?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true (MySQL 9.4)
+2026-03-10T13:56:24.664Z  WARN 20976 --- [SeaZen] [main] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: MySQL 9.4 is newer than this version of Flyway and support has not been tested. The latest supported version of MySQL is 8.1.
+2026-03-10T13:56:24.711Z  INFO 20976 --- [SeaZen] [main] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.038s)
+2026-03-10T13:56:24.729Z  INFO 20976 --- [SeaZen] [main] o.f.core.internal.command.DbMigrate      : Current version of schema `seazen`: 1
+2026-03-10T13:56:24.732Z  INFO 20976 --- [SeaZen] [main] o.f.core.internal.command.DbMigrate      : Schema `seazen` is up to date. No migration necessary.
+2026-03-10T13:56:24.787Z  INFO 20976 --- [SeaZen] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-10T13:56:24.816Z  INFO 20976 --- [SeaZen] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2026-03-10T13:56:24.840Z  INFO 20976 --- [SeaZen] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-10T13:56:24.993Z  INFO 20976 --- [SeaZen] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-10T13:56:25.029Z  WARN 20976 --- [SeaZen] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-10T13:56:25.038Z  INFO 20976 --- [SeaZen] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 9.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-10T13:56:25.572Z  INFO 20976 --- [SeaZen] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-10T13:56:25.624Z  INFO 20976 --- [SeaZen] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-10T13:56:25.840Z  INFO 20976 --- [SeaZen] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-03-10T13:56:25.841Z  WARN 20976 --- [SeaZen] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-03-10T13:56:25.870Z  WARN 20976 --- [SeaZen] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-10T13:56:26.153Z  INFO 20976 --- [SeaZen] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-03-10T13:56:26.158Z  INFO 20976 --- [SeaZen] [main] com.sustainableisland.seazen.SeaZen      : Started SeaZen in 2.967 seconds (process running for 3.16)
+2026-03-10T13:56:31.008Z  INFO 20976 --- [SeaZen] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-10T13:56:31.010Z  INFO 20976 --- [SeaZen] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-10T13:56:31.011Z  INFO 20976 --- [SeaZen] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-03-10T13:58:35.775Z  INFO 20976 --- [SeaZen] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-10T13:58:35.928Z  INFO 20976 --- [SeaZen] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-03-10T13:58:35.931Z  INFO 20976 --- [SeaZen] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-10T13:58:35.933Z  INFO 20976 --- [SeaZen] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-03-10T13:58:35.938Z  INFO 20976 --- [SeaZen] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
