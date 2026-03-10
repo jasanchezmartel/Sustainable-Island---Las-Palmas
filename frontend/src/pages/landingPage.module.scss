@@ -91,25 +91,25 @@
         line-height: 1.75;
         color: rgba(200,230,226,0.78);
     }
+    
+    
+    a {
+        display: block;
+        box-sizing: border-box;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+        text-decoration: none;
+        background: transparent;
+        color: globals.$white;
+        border: solid 1px white;
+        border-radius: 50px;
+        width: 100%;
+        text-align: center;
+        padding: 11px;
+    }
 }
-
-
- a {
-            display: block;
-            box-sizing: border-box;
-            font-family: "Montserrat", sans-serif;
-            font-weight: 500;
-            font-size: 18px;
-            text-decoration: none;
-            background: transparent;
-            color: globals.$white;
-            border: solid 1px white;
-            border-radius: 50px;
-            width: 100%;
-            text-align: center;
-            padding: 11px;
-        }
-// .Button {
+    // .Button {
 //     width: 100%;
 //     max-width: 420px;
 //     padding: 20px;
