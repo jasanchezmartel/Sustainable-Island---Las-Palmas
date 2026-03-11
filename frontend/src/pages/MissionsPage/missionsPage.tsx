@@ -21,7 +21,7 @@ const MISSION_POOL: Mission[] = [
 { id: 7, title: 'Collect plastic bottles from the beach', description: '', goal: 15, unit: 'items' },
 { id: 8, title: 'Pick up discarded fishing nets', description: '', goal: 5, unit: 'items' },
 { id: 9, title: 'Remove plastic bags from the water', description: '', goal: 12, unit: 'items' },
-{ id: 10, title: 'Collect glass bottles along the coast', description: '', goal: 10, unit: 'items' },
+{ id: 10, title: 'Collect glass bottles along the coast.', description: '', goal: 10, unit: 'items' },
 { id: 11, title: 'Gather microplastics near the shoreline', description: '', goal: 40, unit: 'pieces' },
 { id: 12, title: 'Pick up food wrappers on the beach', description: '', goal: 25, unit: 'items' },
 { id: 13, title: 'Remove cigarette butts from the sand', description: '', goal: 50, unit: 'items' },
