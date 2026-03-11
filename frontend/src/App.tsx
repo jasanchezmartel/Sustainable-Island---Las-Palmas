@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router"
 import { Login } from "./pages/Login/Login"
-import { LandingPage } from "./pages/landingPage"
+import { LandingPage } from "./pages/landingPage/landingPage"
 import { Signup } from "./pages/Signup/Signup"
 import { NavBar } from "./components/NavBar/NavBar"
 
