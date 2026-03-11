@@ -1,5 +1,5 @@
 import style from './landingPage.module.scss';
-import AppLogo from '../assets/AppLogo.png';
+import AppLogo from '../../assets/AppLogo.png';
 
 export function LandingPage() {
     return (
@@ -24,7 +24,7 @@ export function LandingPage() {
                 <p>Join thousands of ocean guardians completing weekly cleanup challenges. Track your impact, care for your sea pet, and help turn the tide on plastic pollution.</p>
             </div>
 
-            <button className={style.Button}>Join us right now!!!</button>
+            <button className={style.Button}>Join us right now!</button>
         </div>
     );
 }
