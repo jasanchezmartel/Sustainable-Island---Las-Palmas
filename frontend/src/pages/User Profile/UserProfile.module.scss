@@ -13,8 +13,26 @@ body {
   color: white;
 }
 
+.userProfile{
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-top: 141px;
+
+h1{
+  font-size: 50px;
+}
+img {
+display: flex;
+justify-content: center;
+}
+}
+
+
+
 .statusBar {
-    width: 100%;
+    width: 90%;
     background-color: #001631;
     height: 15px;
     border-radius: 5px;
@@ -26,4 +44,38 @@ body {
     
     border-radius: 5px;
     
+}
+
+.buttonContainer {
+  margin-top: 41px;
+  height: 42px;
+  width: 232px;
+  display: flex;
+  justify-content: center;
+
+}
+
+
+.logo {
+    width: 60px;
+    height: 60px;
+    padding-left: 20px;
+    padding-top: 20px;
+    object-fit: contain;
+    align-self: flex-start;
+    margin-bottom: 8px;
+}
+
+.topBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 15px 0 15px;
+    margin-bottom: 8px;
+}
+
+.backBtn {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
 }

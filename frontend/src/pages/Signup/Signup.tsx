@@ -4,6 +4,7 @@ import { AuthContext } from '../../context/AuthContext'
 import { Submit } from '../../components/Submit/Submit'
 import { Logo } from '../../components/Logo/Logo'
 import style from '../Login/Login.module.scss'
+import { Link } from 'react-router'
 
 export function Signup() {
     const [error, setError] = useState<string | null>(null)
@@ -47,9 +48,11 @@ export function Signup() {
                 <Input type="email" label="email" />
                 <Input type="text" label="username" />
                 <Input type="password" label="password" />
-                <div>
-                    <Submit value="Create Account" />
-                </div>
+                <Link to="/pet">
+                    <div>
+                        <Submit value="Create Account" />
+                    </div>
+                </Link>
 
             </form>
         </>
