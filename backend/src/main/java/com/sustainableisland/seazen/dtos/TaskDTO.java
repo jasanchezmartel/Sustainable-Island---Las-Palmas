@@ -6,6 +6,7 @@ public class TaskDTO {
     private String name;
     private String waste;
     private Integer amount;
+    private boolean completed;
 
     public Long getId() {
         return id;
@@ -45,5 +46,13 @@ public class TaskDTO {
 
     public void setAmount(Integer amount) {
         this.amount = amount;
+    }
+
+    public boolean isCompleted() {
+        return completed;
+    }
+
+    public void setCompleted(boolean completed) {
+        this.completed = completed;
     }
 }
