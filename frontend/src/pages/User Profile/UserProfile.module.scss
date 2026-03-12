@@ -12,3 +12,18 @@ body {
 
   color: white;
 }
+
+.statusBar {
+    width: 100%;
+    background-color: #001631;
+    height: 15px;
+    border-radius: 5px;
+}
+
+.progressBar {
+    background: linear-gradient(#11B4FF, #fff);
+    height: 12px;
+    
+    border-radius: 5px;
+    
+}
