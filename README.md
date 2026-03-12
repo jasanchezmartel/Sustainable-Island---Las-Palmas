@@ -61,7 +61,78 @@ git clone https://github.com/jasanchezmartel/Sustainable-Island---Las-Palmas.git
  ./mvnw spring-boot:run
  ```
 
+## Production Backend
+
+> Full details: [`docs/Prod-Backend.md`](docs/Prod-Backend.md)
+
+### Request flow
+
+`External Client (HTTPS)` → `Nginx (Reverse Proxy + SSL :443)` → `Spring Boot (:8080)` → `MySQL (:3307)`
+
+### Requirements
+
+Before deploying to production, the server must have:
+
+- [![JDK 17](https://img.shields.io/badge/-JDK_17-437291?style=flat&logo=openjdk&logoColor=white)](https://docs.aws.amazon.com/corretto/latest/corretto-17-ug/downloads-list.html) installed on the host.
+- [![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat&logo=docker&logoColor=white)](https://docs.docker.com/desktop/setup/install/windows-install/) to spin up the MySQL container.
+- **Nginx** installed and configured with a valid SSL certificate (`fullchain.pem` / `privkey.pem`).
+- Log directory created and accessible:
+
+  ```bash
+  sudo mkdir -p /var/log/seazen
+  sudo chown -R $USER:$USER /var/log/seazen
+  ```
+
+- MySQL database initialised:
+
+  ```sql
+  CREATE DATABASE seazen;
+  ```
+
+### Instructions to deploy the backend in production
+
+1. **Clone the repository** (if not already cloned):
+
+   ```bash
+   git clone https://github.com/jasanchezmartel/Sustainable-Island---Las-Palmas.git
+   ```
+
+2. **Start the MySQL container** using the provided script from the `backend/` folder:
+
+   ```bash
+   ./docker-start-containter-mysql.bat
+   ```
+
+   Verify in Docker Desktop that the container is running on port **3307**.
+
+3. **Install and configure Nginx** — copy the provided configuration file and reload:
+
+   ```bash
+   sudo cp nginx-sustainable-island.conf /etc/nginx/sites-available/sustainable-island
+   sudo ln -s /etc/nginx/sites-available/sustainable-island /etc/nginx/sites-enabled/
+   sudo systemctl reload nginx
+   ```
+
+4. **Compile and package** the application (from `backend/`):
+
+   ```bash
+   ./mvnw clean package -DskipTests
+   ```
+
+   After a `BUILD SUCCESS`, the executable `target/backend-0.0.1-SNAPSHOT.jar` will be ready.
+
+5. **Start the application** with the production profile:
+
+   ```bash
+   sudo java -jar target/backend-0.0.1-SNAPSHOT.jar --spring.profiles.active=prod
+   ```
+
+   > During startup, Flyway will automatically run all migrations in `/db/migration/` and Spring Boot will start listening on port **8080**, waiting for Nginx to forward traffic.
+
+---
+
 # Frontend
+
 
 ## Requirements
 
@@ -69,7 +140,7 @@ git clone https://github.com/jasanchezmartel/Sustainable-Island---Las-Palmas.git
 
 * [![Figma](https://img.shields.io/badge/-Figma-F24E1E?style=flat&logo=figma&logoColor=white)]([https://www.figma.com/design/b1wzQ5d4tamVixL3SZzZrg/Blood4Life?node-id=0-1&p=f&t=4vENweVa6vCEpXQd-0](https://www.figma.com/design/XrEDllgQe1w5IeMsC1ODnW/Las-Palmas?node-id=51-122&p=f))
 * [![GitHub Project](https://img.shields.io/badge/-Github_Project-181717?style=flat&logo=github&logoColor=white)]([https://github.com/jasanchezmartel/Sustainable-Island---Las-Palmas.git])
-* [![PostMan]
+* [![PostMan](https://img.shields.io/badge/-Postman-FF6C37?style=flat&logo=postman&logoColor=white)](https://documenter.getpostman.com/view/49710299/2sBXietaPk)
 
 ## Authors
 
