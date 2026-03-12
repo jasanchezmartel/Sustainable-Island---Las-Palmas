@@ -1,7 +1,7 @@
 package com.sustainableisland.seazen.controllers;
 
-import com.sustainableisland.seazen.models.Notification;
-import com.sustainableisland.seazen.repositories.NotificationRepository;
+import com.sustainableisland.seazen.dtos.NotificationDTO;
+import com.sustainableisland.seazen.services.NotificationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -13,28 +13,25 @@ import java.util.List;
 public class NotificationController {
 
     @Autowired
-    private NotificationRepository notificationRepository;
+    private NotificationService notificationService;
 
     @GetMapping
-    public List<Notification> getAllNotifications() {
-        return notificationRepository.findAll();
+    public List<NotificationDTO> getAllNotifications() {
+        return notificationService.getAllNotifications();
     }
 
     @GetMapping("/user/{userId}")
-    public List<Notification> getNotificationsByUserId(@PathVariable Long userId) {
-        return notificationRepository.findByUserId(userId);
+    public List<NotificationDTO> getNotificationsByUserId(@PathVariable Long userId) {
+        return notificationService.getNotificationsByUserId(userId);
     }
 
     @PostMapping
-    public Notification createNotification(@RequestBody Notification notification) {
-        return notificationRepository.save(notification);
+    public NotificationDTO createNotification(@RequestBody NotificationDTO notificationDTO) {
+        return notificationService.createNotification(notificationDTO);
     }
 
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> deleteNotification(@PathVariable Long id) {
-        return notificationRepository.findById(id).map(notification -> {
-            notificationRepository.delete(notification);
-            return ResponseEntity.ok().<Void>build();
-        }).orElse(ResponseEntity.notFound().build());
+        return notificationService.deleteNotification(id) ? ResponseEntity.ok().build() : ResponseEntity.notFound().build();
     }
 }

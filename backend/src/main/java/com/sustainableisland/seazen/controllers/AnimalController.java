@@ -1,7 +1,7 @@
 package com.sustainableisland.seazen.controllers;
 
-import com.sustainableisland.seazen.models.Animal;
-import com.sustainableisland.seazen.repositories.AnimalRepository;
+import com.sustainableisland.seazen.dtos.AnimalDTO;
+import com.sustainableisland.seazen.services.AnimalService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -13,38 +13,39 @@ import java.util.List;
 public class AnimalController {
 
     @Autowired
-    private AnimalRepository animalRepository;
+    private AnimalService animalService;
 
     @GetMapping
-    public List<Animal> getAllAnimals() {
-        return animalRepository.findAll();
+    public List<AnimalDTO> getAllAnimals() {
+        return animalService.getAllAnimals();
     }
 
     @GetMapping("/user/{userId}")
-    public List<Animal> getAnimalsByUserId(@PathVariable Long userId) {
-        return animalRepository.findByUserId(userId);
+    public List<AnimalDTO> getAnimalsByUserId(@PathVariable Long userId) {
+        return animalService.getAnimalsByUserId(userId);
+    }
+
+    @GetMapping("/{id}")
+    public ResponseEntity<AnimalDTO> getAnimalById(@PathVariable Long id) {
+        return animalService.getAnimalById(id)
+                .map(ResponseEntity::ok)
+                .orElse(ResponseEntity.notFound().build());
     }
 
     @PostMapping
-    public Animal createAnimal(@RequestBody Animal animal) {
-        return animalRepository.save(animal);
+    public AnimalDTO createAnimal(@RequestBody AnimalDTO animalDTO) {
+        return animalService.createAnimal(animalDTO);
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<Animal> updateAnimal(@PathVariable Long id, @RequestBody Animal animalDetails) {
-        return animalRepository.findById(id).map(animal -> {
-            animal.setName(animalDetails.getName());
-            animal.setType(animalDetails.getType());
-            animal.setAnimalStatus(animalDetails.getAnimalStatus());
-            return ResponseEntity.ok(animalRepository.save(animal));
-        }).orElse(ResponseEntity.notFound().build());
+    public ResponseEntity<AnimalDTO> updateAnimal(@PathVariable Long id, @RequestBody AnimalDTO animalDetails) {
+        return animalService.updateAnimal(id, animalDetails)
+                .map(ResponseEntity::ok)
+                .orElse(ResponseEntity.notFound().build());
     }
 
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> deleteAnimal(@PathVariable Long id) {
-        return animalRepository.findById(id).map(animal -> {
-            animalRepository.delete(animal);
-            return ResponseEntity.ok().<Void>build();
-        }).orElse(ResponseEntity.notFound().build());
+        return animalService.deleteAnimal(id) ? ResponseEntity.ok().build() : ResponseEntity.notFound().build();
     }
 }

@@ -23,15 +23,17 @@ public class Task {
   private String waste;
 
   private Integer amount;
+  private boolean completed = false;
 
   public Task() {
   }
 
-  public Task(User user, String name, String waste, Integer amount) {
+  public Task(User user, String name, String waste, Integer amount, boolean completed) {
     this.user = user;
     this.name = name;
     this.waste = waste;
     this.amount = amount;
+    this.completed = completed;
   }
 
   public Long getId() {
@@ -72,5 +74,13 @@ public class Task {
 
   public void setAmount(Integer amount) {
     this.amount = amount;
+  }
+
+  public boolean isCompleted() {
+    return completed;
+  }
+
+  public void setCompleted(boolean completed) {
+    this.completed = completed;
   }
 }
