@@ -2,13 +2,16 @@ import { useContext, useState } from 'react'
 import { Input } from '../../components/Input/Input'
 import { AuthContext } from '../../context/AuthContext'
 import { Submit } from '../../components/Submit/Submit'
-import logo from '../../assets/img/logo.png'
+import {Logo} from '../../components/Logo/Logo'
+import { Button } from '../../components/Button/Button'
+import { useNavigate } from 'react-router'
 import style from './Login.module.scss'
 
 
 export function Login() {
     const [error, setError] = useState<string | null>(null)
     const { userData, setUserData } = useContext(AuthContext)
+    const navigate = useNavigate()
 
     function postLogin(e: React.SubmitEvent) {
         e.preventDefault()
@@ -42,19 +45,19 @@ export function Login() {
 
     return (
         <>
-            <img src={logo} alt="turtle-logo" className={style.logo} />
+            <Logo></Logo>
             {userData && (
                 <b className={style.header}>Log In {userData.user.username} {userData.user.password}</b>
             )}
             {error && <b>error</b>}
             <form className={style.loginStyle} onSubmit={(e) => postLogin(e)}>
-                <Input type="username" label='Username' />
-                <Input type="password" label='Password' />
+                <Input type="text" label='username' />
+                <Input type="password" label='password' />
                 <div>
                     <Submit value='Login'></Submit>
                 </div>
                 <div>
-                    <a href="http://localhost:5173/signup">Register</a>
+                    <Button onClick={() => navigate("/signup")}>Register</Button>
                 </div>
             </form>
         </>

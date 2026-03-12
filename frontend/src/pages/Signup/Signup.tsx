@@ -2,7 +2,7 @@ import { useContext, useState } from 'react'
 import { Input } from '../../components/Input/Input'
 import { AuthContext } from '../../context/AuthContext'
 import { Submit } from '../../components/Submit/Submit'
-import logo from '../../assets/img/logo.png'
+import { Logo } from '../../components/Logo/Logo'
 import style from '../Login/Login.module.scss'
 
 export function Signup() {
@@ -12,9 +12,9 @@ export function Signup() {
     function postSignup(e: React.SubmitEvent) {
         e.preventDefault()
 
-        const email = e.target.Email.value
+        const email = e.target.email.value
         const username = e.target.username.value
-        const password = e.target.password.v
+        const password = e.target.password.value
         const body = new URLSearchParams()
 
         body.append('email', email)
@@ -37,16 +37,16 @@ export function Signup() {
 
     return (
         <>
-            <img src={logo} alt="turtle-logo" className={style.logo} />
+            <Logo></Logo>
 
             {userData && (
                 <b className={style.header}> Create Account {userData.user.email} </b>
             )}
             {error && <b>{error}</b>}
             <form className={style.loginStyle} onSubmit={postSignup}>
-                <Input type="email" label="Email" />
-                <Input type="text" label="Username" />
-                <Input type="password" label="Password" />
+                <Input type="email" label="email" />
+                <Input type="text" label="username" />
+                <Input type="password" label="password" />
                 <div>
                     <Submit value="Create Account" />
                 </div>
