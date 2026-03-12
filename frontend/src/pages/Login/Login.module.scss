@@ -24,31 +24,16 @@ body {
 }
 
 .loginStyle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     color: globals.$white;
-    margin-top: 1rem;
-
-
+    gap: 1rem;
 
     div {
-        margin-top: 2rem;
         justify-self: center;
         width: 100%;
         max-width: 20rem;
 
-        a {
-            display: block;
-            box-sizing: border-box;
-            font-family: "Montserrat", sans-serif;
-            font-weight: 500;
-            font-size: 18px;
-            text-decoration: none;
-            background: transparent;
-            color: globals.$white;
-            border: solid 1px white;
-            border-radius: 50px;
-            width: 100%;
-            text-align: center;
-            padding: 11px;
-        }
     }
 }

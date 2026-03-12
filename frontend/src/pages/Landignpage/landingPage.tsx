@@ -1,5 +1,5 @@
 import style from './landingPage.module.scss';
-import AppLogo from '../assets/AppLogo.png';
+import AppLogo from '../../assets/img/logo.png';
 
 export function LandingPage() {
     return (

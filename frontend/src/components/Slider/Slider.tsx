@@ -1,7 +1,6 @@
 import style from './Slider.module.scss'
 import { useState } from 'react'
 import { Logo } from '../Logo/Logo'
-import { Input } from '../Input/Input'
 import { Link } from 'react-router-dom'
 import left from '../../assets/img/left.png'
 import right from '../../assets/img/right.png'

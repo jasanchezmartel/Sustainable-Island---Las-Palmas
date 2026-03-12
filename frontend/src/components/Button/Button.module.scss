@@ -1,14 +1,15 @@
 @use '../../style/globals' as globals;
 
 .btn {
-    background: transparent;
+    background-color: transparent;
     border: solid 1px white;
     color: globals.$white;
     border-radius: 50px;
     width: 100%;
+    font-size: large;
     height: 42px;
     justify-content: center;
-    margin-top: 10px; 
- 
-    
+   
+
+
 }
