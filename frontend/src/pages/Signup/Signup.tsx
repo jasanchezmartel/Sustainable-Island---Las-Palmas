@@ -48,7 +48,7 @@ export function Signup() {
                 <Input type="email" label="email" />
                 <Input type="text" label="username" />
                 <Input type="password" label="password" />
-                <Link to="/pet">
+                <Link to="/choosepet">
                     <div>
                         <Submit value="Create Account" />
                     </div>

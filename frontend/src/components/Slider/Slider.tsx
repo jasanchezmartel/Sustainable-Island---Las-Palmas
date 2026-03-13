@@ -5,6 +5,7 @@ import { Input } from '../Input/Input'
 // import { Link } from 'react-router-dom'
 import left from '../../assets/img/left.png'
 import right from '../../assets/img/right.png'
+import { Link } from 'react-router'
 
 interface ImageItem {
     img: string;
@@ -38,11 +39,11 @@ export function Slider({ images }: SliderProps) {
                 <p>{images[currentIndex].name}</p>
             <div className={style.slider}>
                 <button onClick={prevSlide}><img src={left} alt="" /></button>
-                <Link to={`/pets/${images[currentIndex].id}`}><img className={style.pets} src={images[currentIndex].img} alt="slider" /></Link>
+                <Link to='/userprofile'><img className={style.pets} src={images[currentIndex].img} alt="slider" /></Link>
                 <button onClick={nextSlide}><img src={right} alt="" /></button>
             </div>
             <div className={style.startcontainer}>
-                <Link className={style.start} to={`/pets/${images[currentIndex].id}`}>Start</Link>
+                <Link className={style.start} to='/userprofile'>Start</Link>
             </div>
         </section>
     )

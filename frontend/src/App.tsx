@@ -21,7 +21,6 @@ function App() {
           <Route path='/signup' element={<Signup />} />
           <Route path='/userProfile' element={<UserProfile />} />
           <Route path='/missions' element={<MissionsPage />} />
-          <Route path='/choosepet/' element={<Pet />} />
         </Routes>
       </BrowserRouter>
 

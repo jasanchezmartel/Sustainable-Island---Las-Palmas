@@ -8,7 +8,7 @@ import AppLogo from '../../assets/AppLogo.png';
 import BackBtn from '../../assets/BackBtn.png';import { NavBar } from "../../components/NavBar/NavBar";
 ;
 
-export const UserProfile = ({status = 90}) => {
+export const UserProfile = ({status = 50}) => {
   console.log({status})
 
   let img = '';
