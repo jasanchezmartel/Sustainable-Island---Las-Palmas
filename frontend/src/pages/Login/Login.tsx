@@ -47,7 +47,7 @@ export function Login() {
         <>
             <Logo></Logo>
             {userData && (
-                <b className={style.header}>Log In {userData.user.username} {userData.user.password}</b>
+                <b className={style.header}>Log-In {userData.user.username} {userData.user.password}</b>
             )}
             {error && <b>error</b>}
             <form className={style.loginStyle} onSubmit={(e) => postLogin(e)}>
