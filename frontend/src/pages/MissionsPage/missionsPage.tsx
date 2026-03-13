@@ -2,6 +2,7 @@ import { useState } from 'react';
 import style from './missionsPage.module.scss';
 import AppLogo from '../../assets/AppLogo.png';
 import BackBtn from '../../assets/BackBtn.png';
+import { NavBar } from '../../components/NavBar/NavBar';
 
 interface Mission {
     id: number;
@@ -121,6 +122,7 @@ export function MissionsPage() {
                 ))}
             </div>
 
+                <NavBar />
         </div>
     );
 }

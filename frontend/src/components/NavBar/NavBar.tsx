@@ -10,15 +10,15 @@ export function NavBar() {
         <nav className={style.navbarStyle}>
             <ul>
                 <li>
-                    <NavLink to='/'>
+                    <NavLink to='/userprofile'>
                         <img className={style.navImg} src={paw} alt="" /> </NavLink>
                 </li>
                 <li>
-                    <NavLink to='/'>
+                    <NavLink to='/LandingPage'>
                         <img className={style.navImg} src={menu} alt="" /> </NavLink>
                 </li>
                 <li>
-                    <NavLink to='/'>
+                    <NavLink to='/missions'>
                         <img className={style.navImg} src={task} alt="" /> </NavLink>
                 </li>
             </ul>

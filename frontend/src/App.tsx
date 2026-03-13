@@ -1,8 +1,10 @@
 import { BrowserRouter, Route, Routes } from "react-router"
 import { Login } from "./pages/Login/Login"
-import { LandingPage } from "./pages/landingPage/landingPage"
+import { LandingPage } from "./pages/LandingPage/landingPage"
 import { Signup } from "./pages/Signup/Signup"
 import { NavBar } from "./components/NavBar/NavBar"
+import { UserProfile } from "./pages/User Profile/UserProfile"
+import { MissionsPage } from "./pages/MissionsPage/missionsPage"
 import { Pet } from './pages/Pet/Pet'
 
 
@@ -14,10 +16,11 @@ function App() {
         <Routes>
           <Route path='/choosepet' element={<Pet />} />
           <Route path='/navbar' element={<NavBar />} />
-          <Route path='/' element={<LandingPage />} />
+          <Route path='/LandingPage' element={<LandingPage />} />
           <Route path='/login' element={<Login />} />
           <Route path='/signup' element={<Signup />} />
-          <Route path='/choosepet/' element={<Pet />} />
+          <Route path='/userProfile' element={<UserProfile />} />
+          <Route path='/missions' element={<MissionsPage />} />
         </Routes>
       </BrowserRouter>
 
